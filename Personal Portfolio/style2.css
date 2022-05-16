@@ -1,0 +1,152 @@
+nav{
+    position: absolute;
+    right:10%;
+    top:10px;
+    margin-bottom: 30px;
+    width: 50%;
+    background-color: red;
+    border-radius: 10px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+  
+  }
+  
+  nav a{
+      font-size: 15px;
+      text-transform: uppercase;
+      color: black;
+      text-decoration: none;
+      line-height: 50px;
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      text-align:center ;
+  }
+  
+  nav .animation{
+      position: absolute;
+      height: 8px;
+      bottom: 0;
+      z-index: 0;
+      background: white;
+      
+      border-radius: 8px;
+      transition: all .5s ease 0s;
+  }
+  
+  a:nth-child(1){
+      width: 33%;
+  }
+  
+  nav .Home,a:nth-child(1):hover~.animation{
+      width: 33%;
+      left:0;
+  }
+  
+  a:nth-child(2){
+      width: 33%;
+  }
+  
+  nav .About-Us,a:nth-child(2):hover~.animation{
+      width: 33%;
+      left:33%;
+  }
+  
+  a:nth-child(3){
+      width: 33%;
+  }
+  
+  nav .Contact-Us,a:nth-child(3):hover~.animation{
+      width: 33%;
+      left:66%;
+  }
+  
+.portfolio-pic{
+    width: 25%;
+    height: 30%;
+    position: relative;
+    margin-top: 50px;
+    left:10%;
+    background-color: white;
+    border-radius: 50px;
+
+}
+
+.body{
+    background-color: black;
+}
+
+
+.Title{
+    color: red;
+    margin-left: 10%;
+}
+
+.intro{
+    color: white;
+    width: 50%;
+
+    position: fixed;
+    top:90px;
+    right:10%;
+
+
+}
+
+div.item2{
+    margin-left: 10%;
+    margin-top: 21%;
+}
+
+img.image{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+img.image1{
+    width: 50px;
+    height: 50px;
+}
+
+.logos{
+    width: 70px;
+    margin-top: 55px;
+    
+}
+
+h2{
+    margin-bottom: 85px;
+    color:red
+}
+
+.sidepic{
+    display: block;
+    margin-left: 15%;
+    width: 90%;
+    margin-bottom: 35%;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'menu header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    gap: 10px;
+    
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }

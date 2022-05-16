@@ -1,0 +1,275 @@
+
+
+
+header{
+    color: red;
+}
+
+.wrapper{
+    
+    background: white;
+    border-radius: 5px;
+}
+
+.wrapper header{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 30px;
+    border-bottom: 1px solid black;
+}
+
+.wrapper form{
+    margin:35px 30px;
+}
+
+form .dbl-field{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+.dbl-field .field{
+    height: 50px;
+    width: calc(100% /2 - 13px);
+}
+
+form .field input,
+form .message textarea{
+    height: 100%;
+    width: 100%;
+    outline:none;
+    padding: 0 5px;
+    font-size:16px ;
+    border-radius: 5px;
+    border:1px solid black
+}
+
+
+form .field input::placeholder,
+form .message textarea::placeholder{
+    color:red
+}
+
+form .message textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 120px;
+}
+
+form .field input:focus,
+form .message textarea:focus{
+    border: 2px solid red
+}
+
+form .button-area{
+    margin: 25px 0;
+}
+
+.button-area button{
+    font-size: 18px;
+    border:none;
+    color: white;
+    cursor:pointer;
+    border-radius: 5px;
+    background: red;
+    padding: 13px 25px;
+    margin-bottom: 25px;
+    
+}
+
+.button-area span{
+    color: red;
+    margin-left: 30px;
+    display: none;
+}
+
+@media(max-width: 600px){
+    .wrapper header{
+        text-align: center;
+    }
+    form .dbl-field{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .dbl-field .field{
+        width:100%;
+    }
+    .button-area button{
+        width: 100%;
+    }
+
+    form .button-area{
+        flex-direction: column;
+    }
+
+    .button-area span{
+        margin-right: 20px 0;
+        text-align: center;
+        
+    };
+}
+
+.fa-user:before {
+    content: "\f0e0";
+    color: black;
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+    color: black;
+}
+
+.fa-globe:before {
+    content: "\f0e0";
+    color: black;
+}
+
+.fa-phone-alt:before {
+    content: "\f0e0";
+    color: black;
+}
+
+h1.ContactForm{
+    text-align: center;
+    color: red;
+}
+
+
+
+nav{
+    position: absolute;
+    right:10%;
+    top:10px;
+    margin-bottom: 30px;
+    width: 50%;
+    background-color: red;
+    border-radius: 10px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+  
+  }
+  
+  nav a{
+      font-size: 15px;
+      text-transform: uppercase;
+      color: black;
+      text-decoration: none;
+      line-height: 50px;
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      text-align:center ;
+  }
+  
+  nav .animation{
+      position: absolute;
+      height: 8px;
+      bottom: 0;
+      z-index: 0;
+      background: white;
+      
+      border-radius: 8px;
+      transition: all .5s ease 0s;
+  }
+  
+  a:nth-child(1){
+      width: 33%;
+  }
+  
+  nav .Home,a:nth-child(1):hover~.animation{
+      width: 33%;
+      left:0;
+  }
+  
+  a:nth-child(2){
+      width: 33%;
+  }
+  
+  nav .About-Us,a:nth-child(2):hover~.animation{
+      width: 33%;
+      left:33%;
+  }
+  
+  a:nth-child(3){
+      width: 33%;
+  }
+  
+  nav .Contact-Us,a:nth-child(3):hover~.animation{
+      width: 33%;
+      left:66%;
+  }
+  
+.portfolio-pic{
+    width: 25%;
+    height: 30%;
+    position: relative;
+    margin-top: 50px;
+    left:10%;
+    background-color: white;
+    border-radius: 50px;
+
+}
+
+.body{
+    background-color: black;
+}
+
+
+.Title{
+    color:red;
+    margin-left: 10%;
+}
+
+.intro{
+    color: white;
+    width: 50%;
+
+    position: fixed;
+    top:90px;
+    right:10%;
+
+
+}
+
+footer{
+    margin-left: 10%;
+    margin-top: 40px;
+    color: white;
+}
+
+img.image{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+img.image1{
+    width: 50px;
+    height: 50px;
+}
+
+.logos{
+    width: 70px;
+    margin-left: 40%;
+    margin-top: 55px;
+    
+}
+
+.logo-cap{
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    top: 125px;
+    right: 33%;
+    
+    
+}
+
+.sidepic{
+    position: relative;
+    
+    width: 25%;
+    height: 40%;
+}
+
